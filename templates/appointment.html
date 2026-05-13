@@ -290,39 +290,10 @@ FACEBOOK: https://www.facebook.com/themefisher
       <h3>Our Expert
         <span>Doctors</span>
       </h3>
-      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
-        <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?</p>
+      <p class="mb-0">Meet our team of highly qualified and experienced doctors <br>dedicated to providing the best medical care for you and your family.</p>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6">
-        <div class="team-member">
-          <img loading="lazy" src="{% static 'images/team/doctor-2.jpg' %}" alt="doctor" class="img-fluid">
-          <div class="contents text-center">
-            <h4>Dr. Robert Barrethion</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="/appointment/" class="btn btn-main">Book Appointment</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="team-member">
-          <img loading="lazy" src="{% static 'images/team/doctor-lab-3.jpg' %}" alt="doctor" class="img-fluid">
-          <div class="contents text-center">
-            <h4>Dr. Marry Lou</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="/appointment/" class="btn btn-main">Book Appointment</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="team-member">
-          <img loading="lazy" src="{% static 'images/team/event-2.jpg' %}" alt="doctor" class="img-fluid">
-          <div class="contents text-center">
-            <h4>Dr. Sansa Stark</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="/appointment/" class="btn btn-main">Book Appointment</a>
-          </div>
-        </div>
+      <div class="row" id="home-doctors-container">
       </div>
     </div>
   </div>
@@ -550,6 +521,29 @@ FACEBOOK: https://www.facebook.com/themefisher
             alert('Something went wrong. Please try again.');
         });
     }
+</script>
+<script>
+fetch('/api/v1/doctors/')
+    .then(res => res.json())
+    .then(data => {
+        const container = document.getElementById('home-doctors-container');
+        container.innerHTML = '';
+        data.slice(0, 3).forEach(doctor => {
+            container.innerHTML += `
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-member">
+                        <img src="${doctor.photo ? doctor.photo : '/static/images/team/doctor-2.jpg'}"
+                             alt="${doctor.full_name}" class="img-fluid">
+                        <div class="contents text-center">
+                            <h4>${doctor.full_name}</h4>
+                            <p>${doctor.specialty}</p>
+                            <a href="/appointment/" class="btn btn-main">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    });
 </script>
 </body>
 
