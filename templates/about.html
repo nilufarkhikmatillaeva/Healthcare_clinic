@@ -207,7 +207,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 <!--End Main Header -->
 
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+<section class="page-title text-center" style="background-image:url({% static 'images/background/3.jpg' %});">
     <div class="container">
         <div class="title-text">
             <h1>about us</h1>
@@ -232,12 +232,12 @@ FACEBOOK: https://www.facebook.com/themefisher
       <div class="col-lg-6">
         <div class="story-content">
           <h2>Our Story</h2>
-          <h5 class="tagline">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, minima. Nemo impedit fuga nostrum expedita sint dicta ullam quam et harum velit saepe"</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus totam ducimus est vero, officiis, placeat optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam nesciunt fugit optio illum aut. consectetur adipisicing elit. Neque assumenda, est quam perferendis expedita autem?</p>
+          <h5 class="tagline">"We believe that quality healthcare should be accessible to everyone. Our mission is to provide compassionate and professional medical care to our community."</h5>
+          <p>Founded in 2010, Medic Clinic has been serving the community with dedication and professionalism. Our team of experienced doctors and medical staff are committed to providing the highest quality healthcare services. We combine modern medical technology with a patient-centered approach to ensure the best possible outcomes for our patients.</p>
           <h6>Mission</h6>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam nihil dolorum beatae consequatur mollitia iure?</p>
+          <p>Our mission is to deliver exceptional medical care with compassion and integrity, ensuring every patient receives personalized attention and the best possible treatment.</p>
           <h6>Vision</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur adipisci, voluptatum dolores nostrum omnis.</p>
+          <p>Our vision is to be the most trusted healthcare provider in the region, known for excellence in medical care, innovation, and commitment to patient wellbeing.</p>
         </div>
       </div>
     </div>
@@ -274,54 +274,52 @@ FACEBOOK: https://www.facebook.com/themefisher
             <br>iews. Iterative approaches to corporate strategy...</p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="{% static 'images/gallery/gallery-01.jpg' %}" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="{% static 'images/gallery/gallery-01.jpg' %}"></a>
-          <h3>Facility 01</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-        </div>
+      <div class="gallery-item">
+         `<img loading="lazy" src="{% static 'images/gallery/gallery-01.jpg' %}" class="img-fluid" alt="gallery-image">
+         <a data-fancybox="images" href="{% static 'images/gallery/gallery-01.jpg' %}"></a>
+         <h3>Modern Facilities</h3>
+         <p>State-of-the-art medical equipment and comfortable patient rooms.</p>
       </div>
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="{% static 'images/gallery/gallery-02.jpg' %}" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="{% static 'images/gallery/gallery-02.jpg' %}"></a>
-          <h3>Facility 02</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-        </div>
+      <div class="gallery-item">
+        <img loading="lazy" src="{% static 'images/gallery/gallery-02.jpg' %}" class="img-fluid" alt="gallery-image">
+        <a data-fancybox="images" href="{% static 'images/gallery/gallery-02.jpg' %}"></a>
+        <h3>Operating Rooms</h3>
+        <p>Fully equipped operating rooms with the latest surgical technology.</p>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="{% static 'images/gallery/gallery-03.jpg' %}" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="{% static 'images/gallery/gallery-03.jpg' %}"></a>
-          <h3>Facility 03</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="gallery-item">
+        <img loading="lazy" src="{% static 'images/gallery/gallery-03.jpg' %}" class="img-fluid" alt="gallery-image">
+        <a data-fancybox="images" href="{% static 'images/gallery/gallery-03.jpg' %}"></a>
+        <h3>Laboratory</h3>
+        <p>Advanced diagnostic laboratory for accurate and fast results.</p>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="{% static 'images/gallery/gallery-04.jpg' %}" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="{% static 'images/gallery/gallery-04.jpg' %}"></a>
-          <h3>Facility 04</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="gallery-item">
+        <img loading="lazy" src="{% static 'images/gallery/gallery-04.jpg' %}" class="img-fluid" alt="gallery-image">
+        <a data-fancybox="images" href="{% static 'images/gallery/gallery-04.jpg' %}"></a>
+        <h3>Patient Rooms</h3>
+        <p>Comfortable and modern patient rooms designed for quick recovery.</p>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="{% static 'images/gallery/gallery-05.jpg' %}" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="{% static 'images/gallery/gallery-05.jpg' %}"></a>
-          <h3>Facility 05</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="gallery-item">
+        <img loading="lazy" src="{% static 'images/gallery/gallery-05.jpg' %}" class="img-fluid" alt="gallery-image">
+        <a data-fancybox="images" href="{% static 'images/gallery/gallery-05.jpg' %}"></a>
+        <h3>Radiology Unit</h3>
+        <p>Modern radiology unit with MRI, CT scan and X-ray facilities.</p>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="{% static 'images/gallery/gallery-06.jpg' %}" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="{% static 'images/gallery/gallery-06.jpg' %}"></a>
-          <h3>Facility 06</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
-        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="gallery-item">
+        <img loading="lazy" src="{% static 'images/gallery/gallery-06.jpg' %}" class="img-fluid" alt="gallery-image">
+        <a data-fancybox="images" href="{% static 'images/gallery/gallery-06.jpg' %}"></a>
+        <h3>Pharmacy</h3>
+        <p>In-house pharmacy providing all prescribed medications conveniently.</p>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -347,16 +345,8 @@ FACEBOOK: https://www.facebook.com/themefisher
         </div>
         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionGroup">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute,
-            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-            tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-            haven't
-            heard of them accusamus labore sustainable VHS.
-          </div>
+          We have a team of highly qualified and experienced doctors dedicated to providing the best medical care. Our modern facilities, advanced technology, and patient-centered approach ensure you receive the highest quality treatment. We are committed to your health and wellbeing every step of the way.
+        </div>
         </div>
       </div>
       <div class="card">
@@ -370,16 +360,8 @@ FACEBOOK: https://www.facebook.com/themefisher
         </div>
         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionGroup">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute,
-            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-            tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-            haven't
-            heard of them accusamus labore sustainable VHS.
-          </div>
+  Our clinic is open Saturday to Tuesday from 8am to 10pm. Emergency services are available 24 hours a day, 7 days a week. We recommend scheduling an appointment in advance to minimize waiting time, though walk-ins are always welcome during working hours.
+</div>
         </div>
       </div>
       <div class="card">
@@ -393,16 +375,8 @@ FACEBOOK: https://www.facebook.com/themefisher
         </div>
         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionGroup">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute,
-            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-            tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-            haven't
-            heard of them accusamus labore sustainable VHS.
-          </div>
+  To ensure a comfortable and safe environment for all patients, we allow a maximum of 2 visitors per patient at a time. Visitors must be 12 years or older. Special exceptions can be made for children patients or critical care situations upon request from the medical staff.
+</div>
         </div>
       </div>
     </div>
